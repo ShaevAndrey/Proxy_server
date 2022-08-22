@@ -2,15 +2,22 @@ from os import strerror
 
 
 class ModifyPage:
-    """Класс модифицирует страничку и возвращает страницу с добавлением символа по заданию"""
+    """
+    Класс модифицирует страничку и возвращает страницу с добавлением символа по заданию
+    """
+
     def __init__(self, page:str, letters_number:int) -> None:
-        """получает на вход исходный текст страницы и количество букв в слове"""
+        """
+        получает на вход исходный текст страницы и количество букв в слове
+        """
         self.letters_number = letters_number
         self.page = page
 
     
     def modify_page(self) -> None:
-        """ Изменяет исходную страницу на основании заданного условия"""
+        """ 
+        Изменяет исходную страницу на основании заданного условия
+        """
         tag = True
         content=''
         len_word = 0
@@ -37,11 +44,13 @@ class ModifyPage:
                     content = content + letter
                     len_word = 0
                 continue
-            content = content+ letter
-            len_word = len_word+1
+            content = content + letter
+            len_word = len_word + 1
         self.modified_page = content
 
     
     def get_modify_page(self) -> str:
-        """Возвращает модифицированную страницу"""
+        """
+        Возвращает модифицированную страницу
+        """
         return self.modified_page
