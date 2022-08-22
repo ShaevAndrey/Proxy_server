@@ -1,6 +1,10 @@
 # Proxy_server
 Задание на первую неделю
+Установка пакетов:
+pip install requests, bottle
 
-Сервер запускается: python server.py
+Запуск сервера:
+python server.py
 
-адрес локального сервера localhost:8080
+пример адреса для перехода:
+http://localhost:8000/item?id=13713480
